@@ -13,67 +13,25 @@ html {
 	height: 100%;
 	width: 100%;
 	font-family: FuturaPTBook, sans-serif !important;
-	overflow: hidden;
 }
 
 .content {
-	position: absolute;
-	top: 0px;
 	background: #212121;
 	color: #ececec;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
-	z-index: 2;
 	transition: all 1s ease;
-}
-
-.content.slide-down{
-	position: absolute;
-	top: 100%;
+	height: 100%;
 }
 
 .portfolio {
-	position: absolute;
-	top: 0px;
-	background: #212121;
-	color: #ececec;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
-	z-index: 1;
-	transition: all 1s ease;
-}
-
-.portfolio > div {
+	background: #eee;
 	color: #212121;
-	display: inline-block;
-	flex-grow: 1;
-	width: calc(100% * (1/3));
-}
-
-.portfolio .item {
-	background: #ececec;
-	border: 1px solid #ececec;
-	overflow: hidden;
-}
-
-/*.portfolio .item img:hover {
-	transform: scale(1.2);
-}*/
-
-.portfolio p {
-	padding: 10px 15px;
-	text-align: center;
+	padding: 20px;
+	height: 100%;
+	transition: all 1s ease;
 }
 
 #logo {
