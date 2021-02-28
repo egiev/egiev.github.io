@@ -1,283 +1,146 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reginald Mabanta</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="scss/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM - Software Engineer</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Reginald Mabanta</h1>
-            <h2>UI Engineer</h2>
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
+    <nav>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Hi, My name is Reginald Mabanta. I'm a Frontend Developer living in Philippines. My expertise is in the area of converting of PSD Files into fully responsive web design.
-                    </p>
-                </div>
-            </div>
+            <a href="" id="bar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <img src="./images/rm.png" alt="" id="logo">
+
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#profile">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>   
         </div>
-    </div>
-    <!-- End #about -->
+    </nav>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2016 – Present">
-                <h3>Cocoon Labs Room</h3>
-                <h4>UI Engineer</h4>
-            </div>
-
-            <div data-date="November 2015 – September 2016">
-                <h3>Infoshift Inc. </h3>
-                <h4>UI Engineer</h4>
-            </div>
-
-            <div data-date="March 2014 – November 2015">
-                <h3>Freelance Wordpress Developer</h3>
-                <h4>Wordpress Developer</h4>
-            </div>
-
-            <div data-date="November 2013 – March 2014">
-                <h3>XVA Media</h3>
-                <h4>Wordpress Developer (OJT)</h4>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Pangasinan</h3>
-            <span class="education-date">June 2009 - October 2014</span>
-            <h4>Bachelor of Science in Information Technology</h4>
-            <p>
-                Tertiary Education
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>San Jacinto Catholic School</h3>
-            <span class="education-date">June 2005 - March 2009</span>
-            <h4></h4>
-            <p>
-                Secondary Education
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Sta. Maria Elementary School</h3>
-            <span class="education-date">June 2000 - March 2005</span>
-            <h4></h4>
-            <p>
-                Primary Education
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+    <section id="home" class="justify-content-center align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/imarket.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Insurance Website</h3>
-                        <p>
-                            Converting Jpeg design provided by the client and make sure that it should be responsive on all web browsers using HTML, JQuery, CSS (animation), Bootstrap and other JQuery plugins. In this project I learned so many thing such how to request to the server using AJAX and how to create template, layout form using crispy form, etc. in Django Framework.
-                        </p>
-                        <a href="https://imarket.ph/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+            <div class="information">
+                <h1>Reginald Mabanta</h1>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/cocoonlabs.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Company Webiste</h3>
-                        <p>
-                            Converting PSD mockup into fully responsive web design that support all web browsers using HTML, JQuery, CSS (animation), Bootstrap and Google Map API. In this project I learned how to use Google Map API like how to add custom marker on the map, etc.
-                        </p>
-                        <a href="http://www.cocoonlabs.io/" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+                <div class="social-medias">
+                    <a href="https://www.facebook.com/reginald.mabanta/" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/egieegie/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reginald-mabanta-641727111" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/egiev" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <!-- End .project -->
+            </div>
+            <div class="introduction">
+                <p class="heading">Introduction</p>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Automated Testing </h3>
-                        <p>
-                           Contributions: Fix web portal, responsive web design, accordion menu (open the state of the menu).
-                        </p>
-                        <!-- <a href="http://www.cocoonlabs.io/" target="_blank">View Project</a> -->
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Power Express Inc.</h3>
-                        <p>
-                           The main goal of this project is to convert the static website into a dynamic one. They want to change the content anytime they want so I've decided to use WordPress.<br>
-
-                            PS: I'm not the one who designed the site.
-                        </p>
-                        <a href="http://powerexpress.com.ph" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                <h3>Frontend Developer / Wordpress Developer</h3>
+                <p class="description">
+                    Hi, Welcome to my Profile! <br><br>
+                    Are you looking for a Frontend Developer or Wordpress Developer to help
+                    you to develop your website ? <br><br>
+                    You are in the right place!
+                </p>
+            
+                <a href="#profile">My Profile <i class="fa fa-arrow-right"></i></a>
             </div>
         </div>
-    </div>
-    <!-- End #projects -->
+    </section>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Javascript</li>
-            <li>HTML/HTML5</li>
-            <li>CSS/CSS3</li>
-            <li>SASS</li>
-            <li>JQuery</li>
-            <li>Photoshop</li>
-            <li>GIT</li>
-            <li>PSD to HTML</li>
-            <li>Google Maps API</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/reginaldventura23@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
+    <section id="profile" class="justify-content-center">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; Reginald Mabanta
-                    </p>
+            <div>
+                <img src="./images/egie.png" alt="" id="avatar">
+            </div>
+            <div>
+                <p class="heading">Profile</p>
+    
+                <h1>Reginald Mabanta</h1>
+                
+                <p>
+                    Hi, let me give you a little background about myself.
+                    
+                    I'm Reginald Mabanta, <span id="age"></span> years old, from the Philippines. <br><br>
+                    
+                    I've been working in the tech industry as a Web Developer for more than 7 years.
+                    Currently, I'm a Senior Frontend Developer in one of the biggest broadband provider 
+                    in my country and I also work as a part-time Wordpress Developer. <br><br>
+
+                    My expertise is to build a web application using a various Single-Page Application(SPA) frameworks
+                    like Angular(2+). I'm a type of a web developer who enjoys learning new technology and make something of it. <br><br>
+                </p>
+
+                <h3>Skills:</h3>
+                <ul>
+                    <li>Javascript(Vanilla, Jquery)</li>
+                    <li>Angular(2+) / Angular Ionic</li>
+                    <li>HTML / HTML5</li>
+                    <li>CSS / CSS3</li>
+                    <li>Wordpress</li>
+                    <li>Bootstrap(v3, v4) and Material</li>
+                    <li>Rxjs</li>
+                    <li>REST Web Services</li>
+                    <li>GIT</li>
+                    <li>Typescript</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+                <a href="#contact">Message <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="justify-content-center">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="project-container">
+                <div class="project-item">
+                    <img src="./images/projects/cocoonlabs.jpg" alt="">
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
+                <div class="project-item">
+                    <img src="./images/projects/imarket.jpg" alt="">
                 </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/egiev" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/movah4ch" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/103418243007516457770" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+                <div class="project-item">
+                    <img src="./images/projects/project.jpg" alt="">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="justify-content-center align-items-center">
+        <div class="container">
+            <!-- <div>
+                <img src="./images/rm-white.png" alt="" id="logo-white">
+            </div> -->
+            <div class="social-medias">
+                <a href="https://www.facebook.com/reginald.mabanta/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/egieegie/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/reginald-mabanta-641727111" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/egiev" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
