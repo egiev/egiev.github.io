@@ -262,16 +262,16 @@ p.heading:before {
 }
 
 @media (max-width: 769px) {
-  section {
-    padding: 3rem 1.5rem;
-  }
-
   #home {
     padding-top: 140px;
   }
 }
 
 @media (max-width: 476px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+
   nav {
     position: absolute;
   }
